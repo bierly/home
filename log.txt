@@ -1,2 +1,4 @@
+第一个版本大致完成
+目前已上传到<a href="https://github.com/bierly/home/tree/main" target="_blank">Github仓库</a>
 日志更新
 <b>日志更新</b>通过访问txt文件自动生成标题和段落，托管在github可以直接获取直链<a href="https://baidu.com">点我跳转百度</a>支持html代码<h2>H2标题测试<h6>2024.1.30.
