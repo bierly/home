@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>啥也不会
+        </title>
+        <link rel="stylesheet" type="text/css" href="nav.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <style>
+
+    #time{
+        color: #6495ED	;
+        font-weight: bold;
+    }
+    #date{
+        color: #66CDAA;
+        font-weight: bold;
+    }
+    #day{
+        color: #40E0D0	;
+        font-weight: bold;
+    }
+    .deng-box {
+	position: fixed;
+	top: -40px;
+	right: -20px;
+	z-index: 999;
+}
+ 
+.deng-box1 {
+	position: fixed;
+	top: -30px;
+	right: 10px;
+	z-index: 999;
+}
+ 
+.deng-box1 .deng {
+	position: relative;
+	width: 120px;
+	height: 90px;
+	margin: 50px;
+	background: #d8000f;
+	background: rgba(216, 0, 15, 0.8);
+	border-radius: 50% 50%;
+	-webkit-transform-origin: 50% -100px;
+	-webkit-animation: swing 5s infinite ease-in-out;
+	box-shadow: -5px 5px 30px 4px rgba(252, 144, 61, 1);
+}
+ 
+.deng {
+	position: relative;
+	width: 120px;
+	height: 90px;
+	margin: 50px;
+	background: #d8000f;
+	background: rgba(216, 0, 15, 0.8);
+	border-radius: 50% 50%;
+	-webkit-transform-origin: 50% -100px;
+	-webkit-animation: swing 3s infinite ease-in-out;
+	box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1);
+}
+ 
+.deng-a {
+	width: 100px;
+	height: 90px;
+	background: #d8000f;
+	background: rgba(216, 0, 15, 0.1);
+	margin: 12px 8px 8px 8px;
+	border-radius: 50% 50%;
+	border: 2px solid #dc8f03;
+}
+ 
+.deng-b {
+	width: 45px;
+	height: 90px;
+	background: #d8000f;
+	background: rgba(216, 0, 15, 0.1);
+	margin: -4px 8px 8px 26px;
+	border-radius: 50% 50%;
+	border: 2px solid #dc8f03;
+}
+ 
+.xian {
+	position: absolute;
+	top: -20px;
+	left: 60px;
+	width: 2px;
+	height: 20px;
+	background: #dc8f03;
+}
+ 
+.shui-a {
+	position: relative;
+	width: 5px;
+	height: 20px;
+	margin: -5px 0 0 59px;
+	-webkit-animation: swing 4s infinite ease-in-out;
+	-webkit-transform-origin: 50% -45px;
+	background: #ffa500;
+	border-radius: 0 0 5px 5px;
+}
+ 
+.shui-b {
+	position: absolute;
+	top: 14px;
+	left: -2px;
+	width: 10px;
+	height: 10px;
+	background: #dc8f03;
+	border-radius: 50%;
+}
+ 
+.shui-c {
+	position: absolute;
+	top: 18px;
+	left: -2px;
+	width: 10px;
+	height: 35px;
+	background: #ffa500;
+	border-radius: 0 0 0 5px;
+}
+ 
+.deng:before {
+	position: absolute;
+	top: -7px;
+	left: 29px;
+	height: 12px;
+	width: 60px;
+	content: " ";
+	display: block;
+	z-index: 999;
+	border-radius: 5px 5px 0 0;
+	border: solid 1px #dc8f03;
+	background: #ffa500;
+	background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+}
+ 
+.deng:after {
+	position: absolute;
+	bottom: -7px;
+	left: 10px;
+	height: 12px;
+	width: 60px;
+	content: " ";
+	display: block;
+	margin-left: 20px;
+	border-radius: 0 0 5px 5px;
+	border: solid 1px #dc8f03;
+	background: #ffa500;
+	background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+}
+ 
+.deng-t {
+	font-family: 华文行楷,Arial,Lucida Grande,Tahoma,sans-serif;
+	font-size: 3.2rem;
+	color: #dc8f03;
+	font-weight: bold;
+	line-height: 85px;
+	text-align: center;
+}
+ 
+.night .deng-t, 
+.night .deng-box, 
+.night .deng-box1 {
+	background: transparent !important;
+}
+ 
+@-moz-keyframes swing {
+	0% {
+		-moz-transform: rotate(-10deg)
+	}
+ 
+	50% {
+		-moz-transform: rotate(10deg)
+	}
+ 
+	100% {
+		-moz-transform: rotate(-10deg)
+	}
+}
+ 
+@-webkit-keyframes swing {
+	0% {
+		-webkit-transform: rotate(-10deg)
+	}
+ 
+	50% {
+		-webkit-transform: rotate(10deg)
+	}
+ 
+	100% {
+		-webkit-transform: rotate(-10deg)
+	}
+}
+.deng-box,
+.deng-box1 {
+  pointer-events: none;}
+        @media screen and (min-width: 601px){
+        .container {
+        overflow: hidden; /* 清除浮动 */
+        margin-top: 30px;}
+      
+
+    .left-content {
+        float: left;
+        width:50%; /* 左侧栏宽度 */
+    }
+
+    .content {
+        /* margin-left: 50%; */
+        
+    }
+    .card {
+    width: 40%; /* 卡片宽度 */
+    padding: 20px; /* 卡片内边距 */
+    border: 1px solid #fff; /* 卡片边框 */
+    border-radius: 10px; /* 卡片圆角 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 卡片阴影 */
+    background-color: #fff; /* 卡片背景色 */
+    overflow: hidden;
+    display: inline-block;
+    margin: 5px;
+  }
+  .card p{
+    overflow-wrap: break-word;display: block;
+  }
+  .card_say {
+    width: 50%; 
+    height: auto;
+    padding: 10px; /* 卡片内边距 */
+    border: 1px solid #fff; /* 卡片边框 */
+    border-radius: 10px; /* 卡片圆角 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 卡片阴影 */
+    background-color: #fff; /* 卡片背景色 */
+    overflow: hidden;
+    margin: 10px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  .card_say h3{
+    color: #0066CC;
+    overflow-wrap: break-word;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+  }
+  .card:hover{
+      background-color:#0066CC ;
+      color: #fff;
+  }
+  .icon{
+      float: left;
+      margin: 10px;
+      padding: 0px;
+      border-radius: 10px;box-shadow: 0px 1px 1px #424242;
+      width: 40px;
+      height: 40px;
+  
+  }
+  .pics{
+    height: 350px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+   }
+   .pics img{
+        width: 100%;
+        height: 100%;
+        /* object-fit: contain; */
+        border-radius: 10px;
+   }
+   
+}
+   @media screen and (max-width: 600px) 
+   {
+
+
+    .left-content {
+        width:100%; /* 左侧栏宽度 */
+        align-self: center;
+        justify-self: center;
+    }
+
+    .content {
+        display: block;
+        margin-top: 10px;
+        align-items: center;
+        clear: both;
+    }
+    .card {
+    width:90%;
+    padding: 20px; /* 卡片内边距 */
+    border: 1px solid #fff; /* 卡片边框 */
+    border-radius: 10px; /* 卡片圆角 */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* 卡片阴影 */
+    background-color: #fff; /* 卡片背景色 */
+    overflow: hidden;
+    display: block;
+    margin: 10px;
+    margin-left: 5px;
+  }
+  .card p{
+    overflow-wrap: break-word;display: block;
+  }
+  .card_say {
+    width: 50%; 
+    height: auto;
+    padding: 10px; /* 卡片内边距 */
+    border: 1px solid #fff; /* 卡片边框 */
+    border-radius: 10px; /* 卡片圆角 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 卡片阴影 */
+    background-color: #fff; /* 卡片背景色 */
+    overflow: hidden;
+    margin: 10px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  .card_say h3{
+    color: #0066CC;
+    overflow-wrap: break-word;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+  }
+  .card:hover:not(#music.card){
+      background-color:#0066CC ;
+      color: #fff;
+  }
+  .icon{
+      float: left;
+      margin: 10px;
+      padding: 0px;
+      border-radius: 10px;box-shadow: 0px 1px 1px #424242;
+      width: 40px;
+      height: 40px;
+  
+  }
+  .pics{
+    height: 350px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+   }
+   .pics img{
+        width: 100%;
+        height: 100%;
+        /* object-fit: contain; */
+        border-radius: 10px;
+   }
+}
+    </style>
+       <script>
+        function openLink(url) {
+  window.open(url,'_blank');
+}
+function updateTime() {
+    var now = new Date();
+    var time = now.toLocaleTimeString();
+    var date = now.toLocaleDateString();
+    var day = now.toLocaleDateString('en-US', { weekday: 'long' });
+
+    document.getElementById('time').innerHTML = '时间：' + time;
+    document.getElementById('date').innerHTML = '日期：' + date;
+    document.getElementById('day').innerHTML = '星期：' + day;
+}
+
+setInterval(updateTime, 1000);
+    </script>
+   
+</head>
+    <body>
+        <div class="top"><img src="img/fail.png" width="100px"></div>
+        <div id="nav">
+            <ul class="top-nav">
+                <li><a class="active" href="index.html">首页</a></li>
+                <li><a href="news.html">看看</a></li>
+                <li><a href="log.html">日志</a></li>
+                <li><a href="walk.html">足迹</a></li>
+                <li><a href="about.html">关于</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="left-content">
+                <div class="pics" style="text-align: center;width: auto; height: auto;">
+                    <div id="time"></div>
+                    <div id="date"></div>
+                    <div id="day"></div>
+                </div>
+                <div class="card">
+                    <img class="icon" src="img/admin.jpg">
+                    <h2 style="font-size: 18px;display: block;">Linno</h2>
+                    <p class="small_p">2024年了，我要干嘛呢？来一年去一年。</p>
+                </div>
+                <div class="card" onclick="openLink('https://github.com/')">
+                    <img class="icon" src="https://github.com/favicon.ico">
+                    <h2 style="font-size: 18px;display: block;">Github</h2>
+                    <p class="small_p">一个面向开源及私有软件项目的托管平台,科学上网.</p>
+                </div>
+                <div class="card" onclick="openLink('https://www.runoob.com/')">
+                    <img class="icon" src="https://www.runoob.com/favicon.ico">
+                    <h2 style="font-size: 18px;display: block;">菜鸟教程</h2>
+                    <p class="small_p">学习的开始,即便梦想再高远也敌不过愚者般的坚持！</p>
+                </div>
+                <div class="card" onclick="openLink('https://app.nextchat.dev/#/settings')">
+               <img class="icon" src="https://app.nextchat.dev/favicon.ico">
+                    <h2 style="font-size: 18px;display: block;">Nextchat</h2>
+                    <p class="small_p">自备key或者接口,设置后可直接使用,所有数据保存在用户浏览器本地.</p>
+                </div>
+                <div class="card_say">
+                    <h3>人生总有这么一个阶段，一个做什么也快乐的阶段，一个说什么也真诚的阶段。笑他们，皆因我们曾经荒唐过，爱他们，皆因我们曾经甜蜜过。 -- 《六楼后座》</h3>
+                </div>
+                <div class="card_say" style="float: right;">
+                    <h3 style="color: #DC143C;">这世上人来人往，不是每件事都要有结果。</h3>
+                </div>
+                <div class="card_say">
+                    <h3 style="color:#FF69B4;">人心中都有自己的早晨，时候到了的人会自己醒来。 -- 刘亮程 《一个人的村庄》</h3>
+                </div>
+                <div class="card_say" style="float: right;">
+                    <h3 style="color: #008000	;">没有人关注你。也无需有人关注你。你必须承认自己的价值，你不能站在他人的角度来反对自己。 -- 菲利普·津巴多</h3>
+                </div>
+                <div style="clear: both; width:auto;
+                padding: 0px; /* 卡片内边距 */
+                margin: 10px;
+                border: 1px solid #fff; /* 卡片边框 */
+                border-radius: 10px; /* 卡片圆角 */
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 卡片阴影 */
+                background-color: #fff; /* 卡片背景色 */
+                overflow: hidden;
+                text-align: center;" id="music">
+                    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=6723173524&auto=0&height=430" style="align-self: center;"></iframe>
+                    <iframe scrolling="no" src="https://widget.tianqiapi.com/?style=yf&skin=pitaya" frameborder="0" width="320" height="320" allowtransparency="true"></iframe>
+                </div>
+                
+            </div>
+         
+            <div class="content">
+            </br>
+            
+                <div class="pics">
+                    <img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/9d059ab28674af04b7918334763f943c02ceec948c6dd3015aa42d02fa98c62ed2192da79c179726e1530c8937ba652f?pictype=scale&from=30111&version=3.3.3.3&fname=1706000885690.jpg&size=1024">
+                </div>
+                <div class="pics">
+                    <img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/bd102564c719f15992ab5f3d6477b7653821bab962b00ac60220b2cb3f704a22ffdb0aa29f0c8d7f760e3b83374b6c85?pictype=scale&from=30111&version=3.3.3.3&fname=1706000875016.jpg&size=1024">
+                </div>
+                <div class="pics">
+                    <img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/a71bc8bf5c9f4e5309d12f205477fbd69c2488386d8872ce82ad08dfafc7da2669dcee5654aeb201da0be40fc573b989?pictype=scale&from=30111&version=3.3.3.3&fname=1706000873831.jpg&size=1024">
+                </div>
+            </div>
+        </div> 
+        <footer>
+            <!-- 灯笼1 -->
+<div class="deng-box">
+	<div class="deng">
+		<div class="xian"></div>
+		<div class="deng-a">
+			<div class="deng-b"><div class="deng-t">节</div></div>
+		</div>
+		<div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
+	</div>
+</div>
+ 
+<!-- 灯笼2 -->
+<div class="deng-box1">
+	<div class="deng">
+		<div class="xian"></div>
+		<div class="deng-a">
+			<div class="deng-b"><div class="deng-t">春</div></div>
+		</div>
+		<div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
+	</div>
+</div>
+                <p style="text-align: center;font-weight: bold;font-size: 15px;">字母世界,其实比现实纯粹.</br></p>
+            </footer>
+    </body>
+ 
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>啥也不会
+        </title>
+        <link rel="stylesheet" type="text/css" href="nav.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <style>
+        .deng-box {
+	position: fixed;
+	top: -40px;
+	right: -20px;
+	z-index: 999;
+}
+ 
+.deng-box1 {
+	position: fixed;
+	top: -30px;
+	right: 10px;
+	z-index: 999;
+}
+ 
+.deng-box1 .deng {
+	position: relative;
+	width: 120px;
+	height: 90px;
+	margin: 50px;
+	background: #d8000f;
+	background: rgba(216, 0, 15, 0.8);
+	border-radius: 50% 50%;
+	-webkit-transform-origin: 50% -100px;
+	-webkit-animation: swing 5s infinite ease-in-out;
+	box-shadow: -5px 5px 30px 4px rgba(252, 144, 61, 1);
+}
+ 
+.deng {
+	position: relative;
+	width: 120px;
+	height: 90px;
+	margin: 50px;
+	background: #d8000f;
+	background: rgba(216, 0, 15, 0.8);
+	border-radius: 50% 50%;
+	-webkit-transform-origin: 50% -100px;
+	-webkit-animation: swing 3s infinite ease-in-out;
+	box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1);
+}
+ 
+.deng-a {
+	width: 100px;
+	height: 90px;
+	background: #d8000f;
+	background: rgba(216, 0, 15, 0.1);
+	margin: 12px 8px 8px 8px;
+	border-radius: 50% 50%;
+	border: 2px solid #dc8f03;
+}
+ 
+.deng-b {
+	width: 45px;
+	height: 90px;
+	background: #d8000f;
+	background: rgba(216, 0, 15, 0.1);
+	margin: -4px 8px 8px 26px;
+	border-radius: 50% 50%;
+	border: 2px solid #dc8f03;
+}
+ 
+.xian {
+	position: absolute;
+	top: -20px;
+	left: 60px;
+	width: 2px;
+	height: 20px;
+	background: #dc8f03;
+}
+ 
+.shui-a {
+	position: relative;
+	width: 5px;
+	height: 20px;
+	margin: -5px 0 0 59px;
+	-webkit-animation: swing 4s infinite ease-in-out;
+	-webkit-transform-origin: 50% -45px;
+	background: #ffa500;
+	border-radius: 0 0 5px 5px;
+}
+ 
+.shui-b {
+	position: absolute;
+	top: 14px;
+	left: -2px;
+	width: 10px;
+	height: 10px;
+	background: #dc8f03;
+	border-radius: 50%;
+}
+ 
+.shui-c {
+	position: absolute;
+	top: 18px;
+	left: -2px;
+	width: 10px;
+	height: 35px;
+	background: #ffa500;
+	border-radius: 0 0 0 5px;
+}
+ 
+.deng:before {
+	position: absolute;
+	top: -7px;
+	left: 29px;
+	height: 12px;
+	width: 60px;
+	content: " ";
+	display: block;
+	z-index: 999;
+	border-radius: 5px 5px 0 0;
+	border: solid 1px #dc8f03;
+	background: #ffa500;
+	background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+}
+ 
+.deng:after {
+	position: absolute;
+	bottom: -7px;
+	left: 10px;
+	height: 12px;
+	width: 60px;
+	content: " ";
+	display: block;
+	margin-left: 20px;
+	border-radius: 0 0 5px 5px;
+	border: solid 1px #dc8f03;
+	background: #ffa500;
+	background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+}
+ 
+.deng-t {
+	font-family: 华文行楷,Arial,Lucida Grande,Tahoma,sans-serif;
+	font-size: 3.2rem;
+	color: #dc8f03;
+	font-weight: bold;
+	line-height: 85px;
+	text-align: center;
+}
+ 
+.night .deng-t, 
+.night .deng-box, 
+.night .deng-box1 {
+	background: transparent !important;
+}
+ 
+@-moz-keyframes swing {
+	0% {
+		-moz-transform: rotate(-10deg)
+	}
+ 
+	50% {
+		-moz-transform: rotate(10deg)
+	}
+ 
+	100% {
+		-moz-transform: rotate(-10deg)
+	}
+}
+ 
+@-webkit-keyframes swing {
+	0% {
+		-webkit-transform: rotate(-10deg)
+	}
+ 
+	50% {
+		-webkit-transform: rotate(10deg)
+	}
+ 
+	100% {
+		-webkit-transform: rotate(-10deg)
+	}
+}
+         @media screen and (min-width: 601px){
+            .card{
+                width: 100%;
+                /* height:max-content; */
+                background-color: #fff;
+                border-radius: 10px;
+                border: 1px solid #fff;
+                box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+            }
+         }
+         .card p{
+            overflow-wrap: break-word;
+         }
+         .deng-box,
+.deng-box1 {
+  pointer-events: none;}
+    </style>
+    </head>
+    <body>
+        <div class="top"><img src="img/fail.png" width="100px"></div>
+        <ul class="top-nav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="news.html">看看</a></li>
+            <li><a href="log.html">日志</a></li>
+            <li><a href="walk.html">足迹</a></li>
+            <li><a href="about.html" class="active">关于</a></li>
+        </ul>
+        <div class="card">
+            <div>
+                <h3 style="text-align: center;color: #DC143C;">关于本站
+                </h3>
+                <p style="color: #5F9EA0;font-weight: bold;text-align: center;">第一个练手项目</br>采用复制粘贴大法,AI辅助,人脑策划,成就本站.</p>
+                </br>
+                <h3 style="text-align: center;color: #8B0000;"></h3>
+                <p style="color: #FF69B4;font-weight: bold;text-align: center;"></br></p>
+            </br>
+            <h3 style="text-align: center;color: #3CB371;">🥤赞助🥤</h3>
+            <div class="card" style="width: auto;height: 300px;display: flex;">
+                <img src="img/pay.jpg" alt="wechat" style="width:50%;height: 100%;margin-bottom: 30px;">
+                <img src="img/alipay.jpg" alt="ali" style="width:50%;height: 100%;margin-left: 5px;margin-bottom: 30px;">
+            </div>
+            </div>
+           
+        </div>
+         <div class="pay" style="clear: both;display: flex;justify-content: center;align-items: center;margin-top: 20px;">
+                <table style="border: 2px solid #FF6347;padding: 0px;margin: 0px;width: 300px;border-radius: 10px;">
+                    <tr>
+                        <th style="width: 50%;height: auto;">Visitors</th>
+                        <th style="width: 50%;height:auto;">Gifts</th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">Linno</td>
+                        <td style="text-align: center;">🥤X3</td>
+                    </tr>
+                </table>
+            </div> 
+       <footer>
+        <!-- 灯笼1 -->
+<div class="deng-box">
+	<div class="deng">
+		<div class="xian"></div>
+		<div class="deng-a">
+			<div class="deng-b"><div class="deng-t">节</div></div>
+		</div>
+		<div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
+	</div>
+</div>
+ 
+<!-- 灯笼2 -->
+<div class="deng-box1">
+	<div class="deng">
+		<div class="xian"></div>
+		<div class="deng-a">
+			<div class="deng-b"><div class="deng-t">春</div></div>
+		</div>
+		<div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
+	</div>
+</div>
+            <p style="text-align: center;font-weight: bold;font-size: 15px;">字母世界,其实比现实纯粹.</p>
+        </footer>
+    </body>
+</html>
